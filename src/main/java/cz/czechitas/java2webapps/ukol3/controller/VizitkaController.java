@@ -17,7 +17,7 @@ public class VizitkaController {
     vizitky = List.of(
          new Vizitka("Dominika Langová", "Proton Therapy Center Czech", "Budínova 2437/1a", "Praha 8, 180 00", "Budínova 2437/1a, 180 00 Praha 8", "dominika.langova@ptc.cz", "222 999 000", "ptc.cz"),
          new Vizitka("Veronika Mlejnková", "Proton Therapy Center Czech", "Budínova 2437/1a", "Praha 8, 180 00", "Budínova 2437/1a, 180 00 Praha 8", "veronika.mlejnkova@ptc.cz", "222 999 000", "ptc.cz"),
-         new Vizitka("zastupující kolega", "Proton Therapy Center Czech", "Budínova 2437/1a", "Praha 8, 180 00", "Budínova 2437/1a, 180 00 Praha 8", "", "222 999 000", "ptc.cz")
+         new Vizitka("zastupující kolega", "Proton Therapy Center Czech", "Budínova 2437/1a", "Praha 8, 180 00", "Budínova 2437/1a, 180 00 Praha 8",null, "222 999 000", "ptc.cz")
     );
   }
 
