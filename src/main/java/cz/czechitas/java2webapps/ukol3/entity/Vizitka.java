@@ -11,12 +11,15 @@ public class Vizitka {
     private String telefon;
     private String web;
 
-    public Vizitka(String jmeno, String firma, String ulice, String obecPsc, String celaAdresa, String email, String telefon, String web) {
+    public Vizitka() {
+    }
+
+    public Vizitka(String jmeno, String firma, String ulice, String obecPsc, String email, String telefon, String web) {
         this.jmeno = jmeno;
         this.firma = firma;
         this.ulice = ulice;
         this.obecPsc = obecPsc;
-        this.celaAdresa = celaAdresa;
+        //this.celaAdresa = celaAdresa;
         this.email = email;
         this.telefon = telefon;
         this.web = web;

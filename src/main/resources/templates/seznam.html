@@ -10,28 +10,28 @@
     <link rel="icon" type="image/png" href="/images/favicon.png">
 </head>
 <body>
-<div th:each="Vizitka, iterStat : ${Vizitka}" class="seznam">
+<div th:each="Vizitky, iterStat : ${Vizitky}" class="seznam">
     <a href="/detail" th:href="@{/detail(id=${iterStat.index})}">
         <div class="Vizitka">
-            <div class="jmeno" th:text="${Vizitka.jmeno}">Dita (Přikrylová) Formánková</div>
-            <div class="firma" th:text="${Vizitka.firma}">Czechitas z. s.</div>
+            <div class="jmeno" th:text="${Vizitky.jmeno}">Dita (Přikrylová) Formánková</div>
+            <div class="firma" th:text="${Vizitky.firma}">Czechitas z. s.</div>
             <div class="udaje">
                 <div class="adresa">
-                    <div th:text="${Vizitka.ulice}">Václavské náměstí 837/11</div>
-                    <div th:text="${Vizitka.obecPsc}">Praha</div>
+                    <div th:text="${Vizitky.ulice}">Václavské náměstí 837/11</div>
+                    <div th:text="${Vizitky.obecPsc}">Praha</div>
                 </div>
                 <div class="kontakty">
                     <div>
-                        <i th:if="${Vizitka.email} != null" class="las la-at"></i>
-                        <span th:if="${Vizitka.email} != null" th:text="${Vizitka.email}"></span>
+                        <i th:if="${Vizitky.email} != null" class="las la-at"></i>
+                        <span th:if="${Vizitky.email} != null" th:text="${Vizitky.email}"></span>
                     </div>
                     <div>
-                        <i th:if="${Vizitka.telefon} != null" class="las la-phone-alt"></i>
-                        <span th:if="${Vizitka.telefon} != null" th:text="${Vizitka.telefon}"></span>
+                        <i th:if="${Vizitky.telefon} != null" class="las la-phone-alt"></i>
+                        <span th:if="${Vizitky.telefon} != null" th:text="${Vizitky.telefon}"></span>
                     </div>
                     <div>
-                        <i th:if="${Vizitka.web} != null" class="las la-globe"></i>
-                        <span th:if="${Vizitka.web} != null" th:text="${Vizitka.web}"></span>
+                        <i th:if="${Vizitky.web} != null" class="las la-globe"></i>
+                        <span th:if="${Vizitky.web} != null" th:text="${Vizitky.web}"></span>
                     </div>
                 </div>
             </div>
